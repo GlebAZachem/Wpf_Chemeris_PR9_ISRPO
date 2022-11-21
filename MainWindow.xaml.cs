@@ -24,5 +24,10 @@ namespace Wpf_Chemeris_PR9_ISRPO
         {
             InitializeComponent();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ListBoxItem lbi = (ListBoxItem)(phoneList.ItemContainerGenerator.ContainerFromIndex(1));
+            TextBlock.Text = lbi.Content.ToString();
+        }
     }
 }
